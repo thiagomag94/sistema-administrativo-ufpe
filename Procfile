@@ -1,0 +1,1 @@
+web: gunicorn carta_de_anuencia_app:app

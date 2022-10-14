@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.app h1 {
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    color:antiquewhite;
+    text-align: center;
+    display: block;
+    
+}
+.app {
+    background-color:  rgb(26, 24, 24);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', 'Sans-Serif';
+    
+
+}   
+
+.header {
+    max-height: 10%;
+    max-width: 80%;
+    min-width: 60% ;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+}
+.app form {
+    background-color: rgba(226, 226, 218, 0.03);
+    padding: 1rem;
+    border-radius: 5px;
+    border-style: none;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.1);
+    max-height: 60%;
+    min-width:50%;
+    max-width: 70%;
+
+}   
+
+
+
+.app form input[type="file"] {
+    border: none;
+    outline: none;
+    display: none;
+    padding: 0.5rem;
+    color: azure;
+    font-weight: bold;
+    margin: 4vw ;
+    
+    
+    
+}
+
+
+
+img {
+    max-width: 2rem;
+    max-height: 2rem;
+}
+
+.btn {
+    border: none;
+    border-radius: 10px;
+    box-shadow: -1px 4px 4px 3px rgba(0, 0, 0, 0.2);
+    min-width: 15vw;
+    background-color: rgb(255, 0, 0);
+    padding: 1.5rem;
+    color: azure;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1rem;
+    justify-content: center;
+    font-family: 'Roboto', 'Sans-Serif';
+    
+}
+
+.btn#submit {
+    font-size: 1.2rem;
+    margin-top: 4vh;
+}
+
+nav#nav-bar{
+    background: rgba(250, 248, 248);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+   
+    font-family: 'Roboto', 'Sans-Serif';
+    z-index: 1;
+    width: 100%;
+    height: 70vh;
+    position:fixed;
+    top: -70vh;
+    box-shadow: 5px 5px 20px rgb(156, 35, 35);
+}
+
+
+.titulo-fecha{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+img.fecha {
+    position: absolute;
+    right: 10px;
+}
+
+img.fecha:hover{
+    transform: scale(0.8);
+}
+.btn:hover{
+    cursor:pointer;
+    background-color: brown;
+
+}
+
+.input {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 10%;
+    font-size: 1rem;
+    
+    font-family: 'Roboto', 'Sans-Serif';
+  
+}
+
+
+p {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: #F7F7F7;
+    
+}
+
+
