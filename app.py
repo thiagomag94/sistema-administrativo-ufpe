@@ -17,11 +17,11 @@ UPLOAD_FOLDER_PORTARIA = os.path.join(os.getcwd(), 'upload\portaria')
 @app.route('/pdf')
 def homepage():
        
-    return render_template("index.html" )
+    return render_template("anexarportarias.html" )
 
 @app.route('/')
 def home():
-    return render_template('cartas_home.html')
+    return render_template('index.html')
 
 
 @app.route('/upload', methods=['POST'])
@@ -47,10 +47,10 @@ def upload():
       
         if conta_carta == 1:
 
-            return render_template("index.html", erro= f"Carta enviada" )
+            return render_template("anexarportarias.html", erro= f"Carta enviada" )
 
         else:
-            return render_template("index.html", erro= f"{conta_carta} cartas enviadas" )
+            return render_template("anexarportarias.html", erro= f"{conta_carta} cartas enviadas" )
 
         
 @app.route('/anexa', methods=['POST'])
@@ -66,10 +66,10 @@ def anexa():
         finally:
             if (erro > 0):
 
-                return render_template("index.html", upload= f"As cartas foram anexadas com portaria escolhida, {erro} arquivo corrompido" )
+                return render_template("anexarportarias.html", upload= f"As cartas foram anexadas com portaria escolhida, {erro} arquivo corrompido" )
             
             else:
-                return render_template("index.html", upload= f"As cartas foram anexadas com portaria escolhida")
+                return render_template("anexarportarias.html", upload= f"As cartas foram anexadas com portaria escolhida")
 
 
 
