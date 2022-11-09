@@ -58,7 +58,7 @@ def upload():
 def anexa():
     if flask.request.method == "POST":
         try:
-            erro = anexa_portaria()
+            erro = anexa_portaria
             anexa_portaria()
         except IndexError:
             pass
